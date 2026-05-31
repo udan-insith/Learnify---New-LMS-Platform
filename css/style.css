@@ -145,3 +145,10 @@ body {
   cursor: pointer;
   z-index: 10000;
 }
+
+/* RESPONSIVE DESIGN */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
