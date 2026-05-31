@@ -127,3 +127,21 @@ body {
 .feature-card:hover {
   transform: translateY(-10px);
 }
+
+/* THEME CHANGER */
+.theme-toggle {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10000;
+}
