@@ -147,10 +147,8 @@ body {
 }
 
 /* RESPONSIVE DESIGN */
-.menu-toggle {
+.hamburger-menu {
   position: sticky;
   display: none;
-  font-size: 30px;
   cursor: pointer;
-  width: 48px;
 }
