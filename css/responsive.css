@@ -50,15 +50,31 @@ body.dark {
 
   .menu-toggle {
     display: block;
+    position: relative;
+    z-index: 2000;
+  }
+
+  .menu-toggle::after,
+  .menu-toggle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #000;
+    transition: transform 400ms ease;
   }
 
   .menu-toggle::after {
-    content: "";
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 3px;
-    background: #000;
+  }
+
+  .menu-toggle::before {
+    bottom: 0;
+    right: 0;
+  }
+
+  .menu-toggle:hover::after {
+    transform: translateY(10px);
   }
 }
