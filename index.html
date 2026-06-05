@@ -34,5 +34,72 @@
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/chatbot.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <!-- LOGO -->
+        <a href="./index.html">
+          <i class="fas fa-book-open"></i>
+          <span>LearnHub</span>
+        </a>
+      </div>
+
+      <!-- HAMBURGER MENU -->
+      <div class="hamburger" id="hamburger">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </div>
+
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item dropdown" id="courseDropdown">
+          <a href="#" class="nav-link dropdown-toggle"
+            >Courses <i class="fas fa-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="./pages/courses.html">All courses</a></li>
+            <li>
+              <a href="./pages/courses.html?category=web">Web Development</a>
+            </li>
+            <li>
+              <a href="./pages/courses.htmlcategory=mobile"
+                >Mobile Development</a
+              >
+            </li>
+            <li>
+              <a href="./pages/courses.htmlcategory=design">UI/UX Design</a>
+            </li>
+            <li>
+              <a href="./pages/courses.htmlcategory=data">Data Science</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="./pages/about.html" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="./pages/contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item theme-toggle-wrapper">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle Dark Mode"
+          >
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+        <li class="nav-item auth-buttons">
+          <a href="./pages/login.html" class="btn btn-secondary">Login</a>
+          <a href="./pages/register.html" class="btn btn-primary">Sign Up</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>
