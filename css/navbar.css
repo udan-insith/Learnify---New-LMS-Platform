@@ -174,3 +174,105 @@ body.dark-theme .theme-toggle i:last-child {
   display: flex;
   gap: var(--spacing-md);
 }
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: var(--spacing-sm);
+}
+
+.ham-line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-primary);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-normal);
+}
+
+.hamburger.active .ham-line:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+.hamburger.active .ham-line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active .ham-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-primary);
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+  }
+
+  .nav-menu.active {
+    max-height: 500px;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: var(--spacing-md);
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: none;
+    border: none;
+    transform: none;
+    margin-top: 0;
+    background-color: var(--bg-secondary);
+    transition:
+      max-height var(--transition-normal),
+      opacity var(--transition-normal),
+      visibility var(--transition-normal);
+  }
+
+  .dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: 300px;
+  }
+
+  .dropdown-menu a {
+    padding-left: var(--spacing-xl);
+  }
+
+  .auth-buttons {
+    width: 100%;
+    gap: var(--spacing-sm);
+    flex-direction: column;
+  }
+
+  .auth-buttons .btn {
+    width: 100%;
+  }
+
+  .theme-toggle-wrapper {
+    width: 100%;
+  }
+}
