@@ -96,15 +96,22 @@
   left: -20px;
   top: 20px;
 }
+
 .card-2 {
   background: linear-gradient(135deg, #f093fb, #f5576c);
   animation: float 3.5s ease-in-out infinite;
   right: -20px;
   top: 80px;
 }
+
 .card-3 {
   background: linear-gradient(135deg, #4facfe, #00f2fe);
   animation: float 4s ease-in-out infinite;
   left: 40px;
   bottom: 20px;
+}
+
+/* FEATURES SECTION */
+.features {
+  padding: var(--spacing-3xl) 0;
 }
