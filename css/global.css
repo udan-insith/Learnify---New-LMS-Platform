@@ -101,3 +101,96 @@ select {
     background-color var(--transition-fast),
     box-shadow var(--transition-fast);
 }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+input::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* SELECTION */
+::selection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* UTILITIES */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.mt {
+  margin-top: var(--spacing-lg);
+}
+.mb {
+  margin-bottom: var(--spacing-lg);
+}
+.my {
+  margin: var(--spacing-lg) 0;
+}
+
+.pt {
+  padding-top: var(--spacing-lg);
+}
+.pb {
+  padding-bottom: var(--spacing-lg);
+}
+.py {
+  padding: var(--spacing-lg) 0;
+}
+
+.section-title {
+  font-size: var(--font-size-4xl);
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: var(--radius-full);
+}
