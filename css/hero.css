@@ -127,4 +127,14 @@
   background: var(--bg-secondary);
   padding: var(--spacing-2xl);
   border-radius: var(--radius-xl);
+  text-align: center;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-normal);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(---shadow-lg);
+  border-color: var(--primary-color);
 }
