@@ -54,4 +54,8 @@
   .hero-subtitle {
     font-size: var(--font-size-base);
   }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
 }
