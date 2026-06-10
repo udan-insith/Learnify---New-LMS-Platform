@@ -58,4 +58,39 @@
   .hero-buttons {
     flex-direction: column;
   }
+
+  .hero-illustration {
+    height: 250px;
+  }
+
+  .floating-card {
+    width: 90px;
+    height: 90px;
+    font-size: var(--font-size-2xl);
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .feature-card {
+    padding: var(--spacing-lg);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    padding: var(--spacing-md);
+  }
+
+  .nav-menu {
+    max-height: 0;
+  }
+
+  .theme-toggle-wrapper {
+    display: none;
+  }
 }
