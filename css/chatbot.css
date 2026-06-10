@@ -154,3 +154,11 @@
   outline: none;
   border-color: var(--primary-color);
 }
+
+.send-btn {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
