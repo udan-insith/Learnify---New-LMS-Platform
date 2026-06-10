@@ -99,14 +99,14 @@
 
 .card-2 {
   background: linear-gradient(135deg, #f093fb, #f5576c);
-  animation: float 3.5s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   right: 30px;
   top: 100px;
 }
 
 .card-3 {
   background: linear-gradient(135deg, #4facfe, #00f2fe);
-  animation: float 4s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
   right: 300px;
   top: 100px;
 }
