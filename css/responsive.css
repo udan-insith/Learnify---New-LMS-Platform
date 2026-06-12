@@ -11,8 +11,8 @@
   }
 
   .hero {
-    grid-template-columns: 1fr;
-    padding: var(--spacing-2xl) var(--spacing-lg);
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 0;
   }
 
   .hero-title {
