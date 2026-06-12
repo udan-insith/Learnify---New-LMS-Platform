@@ -33,6 +33,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: slideInDown 0.8s ease-out;
 }
 
 .hero-subtitle {
@@ -40,12 +41,14 @@
   color: var(--text-secondary);
   margin-bottom: var(--spacing-2xl);
   line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .hero-buttons {
   display: flex;
   gap: var(--spacing-lg);
   flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 /* HERO ILLUSTRATIONS */
@@ -83,7 +86,8 @@
 
 .floating-card:hover {
   transform: translateY(-10px);
-  box-shadow: var(--shadow-2xl);
+  box-shadow: 0 30px 60px rgba(79, 70, 229, 0.3);
+  filter: brightness(1.2);
 }
 
 .floating-card p {
